@@ -9,51 +9,56 @@
 <body>
 <form action="">
     <p>
-        <label>* Phone:
-            <input type="number" name="phone" required>
+        <label>Name
+            <input type="text" name="name" required>
         </label>
     </p>
     <p>
-        <label>* Email:
+        <label>Email
             <input type="email" name="email" required>
         </label>
     </p>
     <p>
-        <label>* Password:
+        <label>Password
             <input type="password" name="password" required>
         </label>
     </p>
     <p>
-        <label>* Confirm Password:
-            <input type="password" name="confirmpassword" required>
+        <label>Number
+            <input type="number" name="number" required>
         </label>
     </p>
     <p>
-        <label>* Nickname:
-            <input type="text" name="nickname" required>
+        <label>Date
+            <input type="date" name="date" required>
         </label>
     </p>
     <p>
-        <label>* Habitual Residence:
-            <select name="residence"  required>
-                <option value="Zhejiang">Zhejiang</option>
-                <option value="Hangzhou">Hangzhou</option>
-                <option value="WestLake">West lake</option>
-            </select>
+        <label>Time
+            <input type="time" name="time" required>
+        </label>
+    </p>
+    
+    <p>
+        <label>Color
+            <input type="color" placeholder="color" name="color" required>
         </label>
     </p>
     <p>
-        <label>* Website: 
-            <input type="url" placeholder="website" required>
+        <label>Range
+            <input type="range" placeholder="renge" name="range" required>
         </label>
     </p>
-    <p></p>
-    <label>
-        <input type="checkbox" name="agreement" required>
-        <span id="agreement">I have read the <a href="https://www.google.com" target="_blank">agreement</a> </span>
-    </label>
-    <p></p>
+    <p>
+        <label>Description
+           <textarea name="description"  cols="30" rows="10" required></textarea>
+
+
+        </label>
+
+    </p>
     <input type="submit" value="Register">
+    <input type="reset" value="clean">
 </form>
 </body>
 </html> 
