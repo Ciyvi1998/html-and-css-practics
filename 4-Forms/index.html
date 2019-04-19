@@ -7,58 +7,44 @@
     <title>4.Forms</title>
 </head>
 <body>
+    <h3>Sign In</h3>
 <form action="">
     <p>
-        <label>Name
-            <input type="text" name="name" required>
+        <label>Full Name:
+            <input placeholder="Enter full name" type="text" name="FullName" required>
         </label>
     </p>
     <p>
-        <label>Email
-            <input type="email" name="email" required>
+        <label>Email address:
+            <input placeholder="Enter email" type="email" name="email" required>
         </label>
-    </p>
-    <p>
-        <label>Password
-            <input type="password" name="password" required>
-        </label>
-    </p>
-    <p>
-        <label>Number
-            <input type="number" name="number" required>
-        </label>
-    </p>
-    <p>
-        <label>Date
-            <input type="date" name="date" required>
-        </label>
-    </p>
-    <p>
-        <label>Time
-            <input type="time" name="time" required>
-        </label>
-    </p>
-    
-    <p>
-        <label>Color
-            <input type="color" placeholder="color" name="color" required>
-        </label>
-    </p>
-    <p>
-        <label>Range
-            <input type="range" placeholder="renge" name="range" required>
-        </label>
-    </p>
-    <p>
-        <label>Description
-           <textarea name="description"  cols="30" rows="10" required></textarea>
+        <p>Communication:
+            <p>
+                <input type="checkbox" id="Email" name="Email" value="Email"> <label for="Email">Email</label>
+            </p>
+            <p>
+                <input type="checkbox" id="SMS" name="SMS" value="SMS"> <label for="SMS">SMS</label>
+            </p>
+            <p>
+            <input type="checkbox" id="Phone" name="Phone" value="Phone"> <label for="Phone">Phone</label>
+            </p>    
 
 
-        </label>
-
-    </p>
-    <input type="submit" value="Register">
-    <input type="reset" value="clean">
+        </p>
+        <p>
+            User Group:<p>
+            <input type="radio" id="salesPerson" name="customer" value="salesPerson"><label for="salesPerson">Sales Person</label>
+        
+        
+            <input type="radio" id="customer" name="customer" value="customer"><label for="customer">Customer</label>
+        
+        
+        </p>
+        <small>Please select user group</small>
+    <p>
+       
+    <input type="submit" value="Submit">
+    <input type="reset" value="cancel">
 </form>
 </body>
 </html> 
