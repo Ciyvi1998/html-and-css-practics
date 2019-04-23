@@ -1,0 +1,45 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+p, a, span {
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+h2 .first-header {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+span>p {
+    color: #d8bdbd;
+}
+
+section {
+    display: flex;
+}
+
+.local-img {
+    border-radius: 10px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border:2px solid transparent;
+}
+.local-img:hover{
+    border:2px solid #e2d7d7;
+}
