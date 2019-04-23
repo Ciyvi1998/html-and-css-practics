@@ -1,0 +1,23 @@
+body{
+    background-color: green;
+}
+.fh1{
+    color: blue;
+}
+.fh2 a{
+    color: azure;
+}
+.fh2 a:hover{
+    background-color: brown;
+
+}
+
+.item-wrap:hover{
+    border-color: red;
+}
+
+.item-wrap{
+    display: inline-block;
+    border: 2px solid transparent;
+
+}
