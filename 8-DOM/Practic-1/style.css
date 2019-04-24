@@ -1,0 +1,23 @@
+h1{
+    margin: 10px;
+}
+div{
+    padding: 0px 0px 15px 0px;
+    margin: 10px; 
+    border: 2px solid gray;
+    display: inline-block;
+    border-radius: 5px;
+}
+img{
+    height: 400px;
+    width: 300px;
+}
+
+.link{
+    color: gray;
+    text-decoration: none;
+}
+
+footer{
+    padding-left: 30px;
+}
