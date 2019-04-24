@@ -1,0 +1,37 @@
+.but {
+    font-size: 14px;
+    font-family: sans-serif;
+    padding: 10px 20px;
+    border-radius:5px;
+}
+.but:hover{
+    cursor: pointer;
+}
+
+.but1 {
+    background-color: #158EFD;
+    color: white;
+    border:none;
+}
+.but2{
+    border:1px solid #E5E5E5;
+    background-color: white;
+}
+
+.but3{
+    background-color: white; 
+    border:2px dashed #E5E5E5;
+}
+.but4{
+    border:2px solid #E5E5E5;
+    color:red;
+    font-weight: bold;
+}
+.small{
+	font-size: 8px;
+	
+}
+.large{
+	font-size: 20px;
+}
+
