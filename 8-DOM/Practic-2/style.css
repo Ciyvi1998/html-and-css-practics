@@ -1,0 +1,123 @@
+* {
+    text-decoration: none;
+    list-style: none;
+    font-family: Helvetica; 
+    box-sizing: border-box;
+}
+
+.card {
+    position: relative;
+    width: 400px;
+    height: 330px;
+    display: inline-block;
+    margin: 5px;
+    border: 1px #bdc3c7 solid;
+}
+
+.list-item {
+    list-style-image: url('assets/document.png');
+}
+
+.list-item span {
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis; 
+}
+
+.more {
+    display: block;
+    margin-top: 5px;
+    margin-left: -25px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #bdc3c7;
+}
+
+p {
+    padding-left: 15px;
+}
+
+p:nth-of-type(2) {
+    font-size: 20px;
+}
+
+.data {
+    position: relative;
+    height: 40px;
+}
+
+.profile {
+    height: 100%;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.user {
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    padding-left: 10px;
+    transform: translateY(-50%);
+}
+
+.name {
+    display: block;
+    font-weight: bold;
+}
+
+.date {
+    display: block;
+    color: gray;
+}
+
+.icons-left {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    height: 25px;
+    display: inline-block;
+    margin: 0 0 0 25px;
+    padding: 0;
+}
+
+.icons-left li {
+    height: 100%;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.icons-left li img {
+    height: 100%;
+}
+
+.icons-right {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    height: 25px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.icons-right li {
+    height: 100%;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.icons-right li img {
+    height: 100%;
+}
+
+.views {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
