@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Helvetica;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    background-image: url('images/background.PNG');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.dark {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.message-box {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    width: 400px;
+    height: 170px;
+    background-color: #fff;
+    border-radius: 5px;
+    transform: translate(-50%,-30%);
+}
+
+.title {
+    width: 85%;
+    display: inline-block;
+    font-weight: bolder;
+    padding: 15px 20px;
+}
+
+.close-btn {
+    display: inline-block;
+    font-weight: bolder;
+    padding: 10px 20px;
+}
+
+.close-btn a {
+    color: gray;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+}
+
+.content {
+    padding: 25px 20px;
+}
+
+.action-buttons {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px 20px;
+}
+
+.cancel {
+    display: inline-block;
+    font-weight: bolder;
+    border: 1px gray solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.cancel a {
+    color: gray;
+}
+
+.okay {
+    display: inline-block;
+    background-color: rgb(62, 130, 255);
+    border: 1px rgb(62, 130, 255) solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.okay a {
+    color: #fff
+}
