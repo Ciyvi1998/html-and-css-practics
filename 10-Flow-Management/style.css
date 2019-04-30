@@ -17,12 +17,20 @@ main {
     background-color: #0505A5;
 }
 
+.lightblue {
+    background-color: lightblue;
+}
+
 .yellow {
     background-color: #FEFE00;
 }
 
 .lightyellow {
     background-color: lightyellow;
+}
+
+.darkyellow {
+    background-color: #FECD06;
 }
 
 .white {
@@ -43,61 +51,165 @@ main {
     padding: 5px;
 }
 
-.col-1 {
-    width: 280px;
+.col-1, .col-3 {
+    width: 230px;
 }
 
 .col-2 {
-    width: 320px;
+    width: 140px;
+    height: 270px;
+}
+
+.column {
+    min-width: 90px;
+    float: left;
+}
+
+.row-1 .col-1 .column:nth-of-type(1) {
+    min-width: 60px;
+}
+
+.row-1 .col-1 .column:nth-of-type(3) {
+    min-width: 70px;
+}
+
+.row-1 .col-1 .column:nth-of-type(1) .cell:nth-of-type(1) {
+    height: 165px;
+}
+
+.row-1 .col-2 .cell {
+    min-width: 120px;
+}
+
+.row-1 .col-2 .column .cell:nth-of-type(1) {
+    min-height: 50px;
+}
+
+.row-1 .col-2 .column .cell:nth-of-type(2) {
+    min-height: 200px;
+}
+
+.row-1 .col-3 .column:nth-of-type(1) {
+    position: relative;
+    min-width: 70px;
+}
+
+.row-1 .col-3 .column:nth-of-type(1) .cell:nth-of-type(2) {
+    min-height: 40px;
+}
+
+.row-1 .col-3 .column:nth-of-type(1) .cell:nth-of-type(3) {
+    position: absolute;
+    width: 100px;
+    height: 120px;
+}
+
+.row-1 .col-3 .column:nth-of-type(2) {
+    min-width: 40px;
+}
+
+.row-1 .col-3 .column:nth-of-type(3) {
+    min-width: 60px;
+}
+
+.row-1 .col-3 .column:nth-of-type(4) {
+    min-width: 50px;
+}
+
+.row-1 .col-3 .column:nth-of-type(2) .cell {
+    min-height: 125px;
+}
+
+.row-1 .col-3 .column:nth-of-type(3) .cell {
+    min-height: 255px;
+}
+
+.row-1 .col-3 .column:nth-of-type(4) .cell {
+    min-height: 255px;
+}
+
+.row-2 .col-1 > .cell {
+    min-height: 70px;
+}
+
+.row-2 .col-1 .column {
+    min-width: 73px;
+    min-height: 175px;
+}
+
+#col21 .cell, #col23 .cell {
+    height: 165px;
+}
+
+#col22 .cell:nth-of-type(1) {
+    min-height: 30px;
+}
+
+#col22 .cell:nth-of-type(2) {
+    min-height: 130px;
+}
+
+.row-2 .col-2 .column:nth-of-type(1) {
+    min-width: 55px;
+}
+
+.row-2 .col-2 .column:nth-of-type(1) .cell {
+    min-width: 55px;
+    height: 255px;
+}
+
+.row-2 .col-2 .column:nth-of-type(2) {
+    min-width: 55px;
+}
+
+.row-2 .col-2 .column:nth-of-type(2) .cell {
+    min-width: 55px;
+}
+
+.row-2 .col-2 .column:nth-of-type(2) .cell:nth-of-type(1) {
+    min-height: 30px;
+}
+
+.row-2 .col-2 .column:nth-of-type(2) .cell:nth-of-type(2) {
+    height: 220px;
+}
+
+.row-2 .col-2 .column:nth-of-type(3) .cell {
+    width: 120px;
+    height: 165px;
+}
+
+.row-2 .col-3 .column {
+    min-width: 73px;
+}
+
+.row-2 .col-3 .column:nth-of-type(3) .cell:nth-of-type(1) {
+    min-height: 100px;
+}
+
+#col31 .cell {
+    height: 145px;
+}
+
+#col32 .cell {
+    width: 135px;
+    min-height: 70px;
+}
+
+#col33 {
+    width: 220px;
 }
 
 .cell {
     height: 100%;
-    min-height: 150px;
+    min-height: 80px;
     margin: 5px;
 }
 
-.row-1 {
-    height: 250px;
+.row-2 .col-1 .gap {
+    height: 100px;
 }
 
-.row-1 .col .cell {
-    min-height: 250px;
-}
-
-.row-2 .col .cell {
-    min-height: 130px;
-}
-
-.row-3 .col-1 .row .cell {
-    float: left;
-    min-height: 200px;
-}
-
-.row-3 .col-1 .row .cell:first-of-type {
-    width: 50px;
-}
-
-.row-3 .col-1 .row .cell:last-of-type {
-    width: 200px;
-}
-
-.row-3 .col-2 .row {
-    width: 150px;
-}
-
-.row-3 .col-2 .row .cell:first-of-type {
-    width: 145px;
-    min-height: 160px;
-}
-
-.row-3 .col-2 .row .cell:last-of-type {
-    width: 145px;
-    min-height: 35px;
-}
-
-.row-3 .col-2 > .cell {
-    float: left;
-    width: 150px;
-    min-height: 200px;
+.row-2 .col-3 .gap {
+    height: 100px;
 }
