@@ -4,75 +4,100 @@
     box-sizing: border-box;
 }
 
- main {
+main {
     width: 600px;
     margin: 0 auto;
 }
 
- .red {
+.red {
     background-color: #FE0000;
 }
 
- .blue {
+.blue {
     background-color: #0505A5;
 }
 
- .yellow {
+.yellow {
     background-color: #FEFE00;
 }
 
- .white {
+.lightyellow {
+    background-color: lightyellow;
+}
+
+.white {
     background-color: #fff;
 }
 
- .row, .col {
+.whitesmoke {
+    background-color: whitesmoke;
+}
+
+.row, .col {
     width: 100%;
     float: left;
     background-color: #000;
 }
 
- .col {
+.col {
     padding: 5px;
 }
 
- .col-1 {
-    width: 120px;
+.col-1 {
+    width: 280px;
 }
 
- .col-2 {
-    width: 480px;
+.col-2 {
+    width: 320px;
 }
 
- .cell {
+.cell {
     height: 100%;
     min-height: 150px;
     margin: 5px;
 }
 
- .row-1 {
-    height: 300px;
+.row-1 {
+    height: 250px;
 }
 
- .row-1 .col-1 .row .cell:first-of-type {
-    min-height: 100px;
+.row-1 .col .cell {
+    min-height: 250px;
 }
 
- .row-1 .col-1 .row .cell:last-of-type {
+.row-2 .col .cell {
+    min-height: 130px;
+}
+
+.row-3 .col-1 .row .cell {
+    float: left;
     min-height: 200px;
 }
 
- .row-1 .col-2 {
-    height: 100%;
+.row-3 .col-1 .row .cell:first-of-type {
+    width: 50px;
 }
 
- .row-2 .col-2 {
-    width: 380px;
+.row-3 .col-1 .row .cell:last-of-type {
+    width: 200px;
 }
 
- .row-2 .col-3 {
-    width: 100px;
+.row-3 .col-2 .row {
+    width: 150px;
 }
 
- .row-2 .col-3 .row .cell {
-    min-height: 75px;
-}  
+.row-3 .col-2 .row .cell:first-of-type {
+    width: 145px;
+    min-height: 160px;
+}
+
+.row-3 .col-2 .row .cell:last-of-type {
+    width: 145px;
+    min-height: 35px;
+}
+
+.row-3 .col-2 > .cell {
+    float: left;
+    width: 150px;
+    min-height: 200px;
+}
